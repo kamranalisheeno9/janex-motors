@@ -1,0 +1,167 @@
+.header-container{
+    color: black;
+}
+.header-list{
+    list-style: none;
+    color: gainsboro;
+    
+}
+.header-list li{
+    margin-top: 8px;
+}
+.menu-icon{
+    float: right;
+    color: gainsboro;
+}
+.icon{
+    font-size: 32px;
+}
+.icon-cross{
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon-cross span{
+   float: right;
+}
+
+.header-row{
+    padding-top: 20px;
+    margin-left: 5%;    
+    margin-right: 5%;    
+}
+.menu-content{
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: -75%;
+    background: #eee;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    width: 50%;
+    height: 100%;
+    transition: right 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+
+   
+}
+.menu-content-show{
+    z-index: 99999999999 !important;
+
+    top: 0;
+    right: 0px;
+    background-color: white;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    padding: 0px;
+    overflow: hidden;
+    transition: 0.5s all linear ;
+    display: block;
+    right: 0;
+    overflow: auto;
+
+}
+.menu-content li,.menu-content-show li{
+    padding: 15px 0px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    transition: 0.5s all linear;
+}
+
+.menu-content-show a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-icon{
+    border-bottom: none;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.active{
+    background-color: #3E669A;
+    color: white;
+}
+.menu-content li:hover,.menu-content-show li:hover{
+    background-color: #3E669A !important;
+    color: white !important;
+}
+
+.logo-icon:hover{
+    background-color: white !important;
+}
+.active:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.view-tabs{
+    position: absolute;
+    top: 1;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    display: none;
+}
+
+.view-tabs  .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: white;
+    border-bottom:2px solid black;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.view-tabs  .nav-tabs {
+    border: none;
+}
+.view-tabs  .nav-tabs .nav-link {
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.view-hours{
+    user-select: none;
+
+}
+.view-hours:hover .view-tabs{
+    display: block;
+}
+.sales-list{
+    background-color: white;
+    color: gray;
+    padding: 0px 15px;
+    padding-bottom: 15px;
+}
+
+.sales-list li{
+    list-style: none;
+}
+.sales-list li span{
+    float: right;
+}
+ 
+
+@media only screen and (max-width:770px){
+    .header-info-col {
+        display: none !important;
+    }
+
+    .menu-content{
+        right: -100%;
+    }
+    .menu-content-show,.menu-content{
+        width: 100%;
+    }  
+    
+  }

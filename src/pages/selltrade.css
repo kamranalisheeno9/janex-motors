@@ -1,0 +1,103 @@
+.trade-values{
+    text-decoration: underline;
+    color: #16B47A;
+}
+.trade-final-page{
+    text-align: center;
+}
+.price-trade{
+    color: #16b47a;
+    display: block;
+    font-size: 46px;
+    font-weight: 700;
+}
+.green-white-container{
+    width: 250px;
+    margin: 10px auto;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+}
+.green-container p{
+    margin: 0px;
+}
+.green-container{
+    height: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #559C56;
+    color: white;
+}
+.trade-in-price{
+    font-size: 22px;
+    padding: 0px;
+    font-weight: 800;
+
+}
+.green-white-container p{
+    margin: 0px;
+}
+.trade-img{
+    max-width: 300px;
+    margin: 20px auto;
+}
+.trade-img img{
+    width: 100%;
+}
+.trade-condition-1{
+    margin: 0px;
+    }
+.trade-condition{
+    margin: 0px;
+    font-weight: 700;
+}
+.trade-ul-list{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.trade-ul-list ul{
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(107, 107, 107);
+    list-style-image: url('https://widget.askava.ai/_next/static/images/ellipse-32-5bfd393cd044ffab78b54484f02ff3bf.png');
+
+}
+.trade-ul-list ul li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+.trade-ul-list ul li:last-child{
+    border-bottom: none;
+
+}
+.trade-ul-list ul li span{
+    color: #16b47a;
+    
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.trade-ul-middle span{
+    color: black !important;
+    font-size: 28px !important;
+    font-weight: 700;
+
+}
+.trade-ul-last span{
+    color: black !important;
+    font-size: 26px !important;
+    font-weight: 700;
+
+}
+.can-i{
+    text-decoration: none;
+}
+@media screen and (max-width:580px){
+    .trade-final-btn img{
+        width: 100%;
+    }
+    
+}

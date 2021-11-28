@@ -1,0 +1,72 @@
+.vehicle-label-class{
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    margin: 0px !important ;
+}
+.vehicle-input{
+    border: 2px solid #ccc;
+    height: 30px!important;
+    border-radius: 10px!important;
+}
+.vehicle-error-class{
+    font-size: 9px;
+    float: right;
+    margin-left: 20px;
+    color: red;
+}
+.checkbox-vehicle .agree-checkbox .form-check-input {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 10px !important;
+
+}
+.checkbox-vehicle .form-check-label{
+    font-size: 9px !important;
+    font-weight: 500;
+    float: left;
+    color: grey ;
+}
+.checkbox-vehicle .invalid-feedback {
+    padding-left: 10px;
+    font-size: 12px !important;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+.vehicle-form-btn{
+    color: green;
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    border: 2px solid green;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.vehicle-checkbox-btn{
+    display: flex;
+}
+.finance-apply-form-vehicle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px gray;
+    padding: 0px;
+}
+.vehicle-ally-form-text{
+    text-align: center;
+    background-color: #008000;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-weight: 800;
+    
+}
+.vehicle-form-container{
+    padding: 0px 30px;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.footer-container{
+    padding-top: 40px;
+    padding-top: 30px;
+    background-color: #23262C;
+    color: white;
+}
+
+.footer-hours  .nav-tabs .nav-link.active {
+    color: #3a5894;
+    background-color: transparent;
+    border-color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+}
+.footer-hours  .nav-tabs {
+    border: none;
+
+}
+
+.footer-hours .nav-tabs .nav-link:hover{
+    border: none;
+
+}
+.footer-hours  .nav-tabs .nav-link {
+    font-size: 18px;
+    color: black;
+    color: white;
+    border: none;
+    transition: 0.25s all linear;
+}
+
+.sales,.services{
+    background-color: #23262C;
+    color: white;
+    padding: 0px 0px;
+    padding-bottom: 15px;
+}
+.footer-hours  .nav-link:focus,.footer-hours  .nav-link.active:focus {
+    background-color: transparent !important;
+    color: #3a5894 !important;
+
+
+}
+.sales li,.services li{
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+.sales li span,.services li span{
+    float: right;
+}
+.hour-location-contact {
+    padding-top: 20px;
+}
+.footer-links{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500 !important;
+
+
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px !important;
+
+}
+.rights{
+    font-size: 14px;
+}
+.rights a{
+    color: white;
+}
+.powered-by{
+    float: right !important;
+}
+@media only screen and (max-width:920px){
+.rights{
+    font-size: 12px;
+}
+.powered-by{
+    font-size: 18px;
+    font-weight: 400 !important;
+}
+}
+    @media only screen and (max-width:578px){
+    .footer-links{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    
+    }
+    .social-links{
+        justify-content: space-between !important;
+    }  
+    .powered-by{
+        float: left !important;
+    }
+    
+}

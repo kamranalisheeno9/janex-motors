@@ -1,24 +1,62 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './pages/home'
+import SalesDept from './pages/saledept'
+import ServiceDept from './pages/servicedept'
+import AboutUs from './pages/aboutus'
+import Contact from './pages/contact'
+import Finance from './pages/finance'
+import SellTrade from './pages/selltrade'
+import Vehicle from './pages/vehicle'
+import Inventory from './pages/inventory'
+import FinanceDepartment from './pages/financedept'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { useEffect, useState } from 'react';
 function App() {
+  const [currentCarData,setCurrentCarData]=useState({})
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+          
+          <Route path="/vehicle">
+      <Vehicle data={currentCarData} />
+          </Route>
+          <Route path="/inventory">
+      <Inventory currentData={setCurrentCarData} />
+          </Route>
+          <Route path="/selltrade">
+      <SellTrade />
+          </Route>
+          <Route path="/financedepartment">
+      <FinanceDepartment />
+          </Route>
+          <Route path="/finance">
+      <Finance />
+          </Route>
+          <Route path="/contact">
+      <Contact />
+          </Route>
+          <Route path="/about">
+      <AboutUs />
+          </Route>
+          <Route path="/service">
+      <ServiceDept />
+          </Route>
+          <Route path="/salesdepartment">
+      <SalesDept />
+          </Route>
+          <Route path="/">
+      <Home />
+          </Route>
+        </Switch>
+      
+    </Router>
   );
 }
 

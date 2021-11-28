@@ -1,0 +1,71 @@
+{
+    "cars":[
+        {
+        
+        "make":"Audi",   
+        "name":" Komfort",   
+        "year":"2022",   
+        "price":"48,918",   
+        "mileage":"18,728",   
+        "body":"SUV",   
+        "engine":"2.0L 4cyl",   
+        "exterior":"Grey",   
+        "transmission":"Automatic",   
+        "drivetrain":"All Wheel Drive",   
+        "stock":"21407",   
+        "condition":"Good",   
+        "city":"Ottawa 9982-0105896763",
+        "trade":"ACCIDENT FREE EASY FINANCE TRADES WELCOMED",
+        "image1":"https://images.edealer.ca/18/99560251.jpeg",
+        "image2":"https://images.edealer.ca/18/99560252.jpeg",
+        "image3":"https://images.edealer.ca/18/99560253.jpeg",
+        "image4":"https://images.edealer.ca/18/99560251.jpeg",
+        "detail":"Our 2018 Audi A5 Sportback 2.0T Komfort quattro Sportback will catch your eye in stunning Brilliant Black. Motivated by a TurboCharged 2.0 Litre 4 Cylinder producing 252hp paired with a 7 Speed Automatic transmission for brisk acceleration. This All Wheel Drive machine offer....."   
+        
+    },
+        {
+        "make":"Toyota",   
+        "name":" Sienna",   
+        "year":"2021",   
+        "price":"48,918",   
+        "mileage":"18,728",   
+        "body":"SUV",   
+        "engine":"2.0L 4cyl",   
+        "exterior":"Grey",   
+        "transmission":"Automatic",   
+        "drivetrain":"All Wheel Drive",   
+        "stock":"21407",   
+        "condition":"Good",   
+        "city":"Ottawa 9982-0105896763",  
+        "trade":"ACCIDENT FREE LOW KMS EASY FINANCE AND TRADE",
+        "image1":"https://images.edealer.ca/18/99560251.jpeg",
+        "image2":"https://images.edealer.ca/18/99560252.jpeg",
+        "image3":"https://images.edealer.ca/18/99560253.jpeg",
+        "image4":"https://images.edealer.ca/18/99560251.jpeg",
+        "detail":"Our 2018 Audi A5 Sportback 2.0T Komfort quattro Sportback will catch your eye in stunning Brilliant Black. Motivated by a TurboCharged 2.0 Litre 4 Cylinder producing 252hp paired with a 7 Speed Automatic transmission for brisk acceleration. This All Wheel Drive machine offer....."   
+        
+    },
+        {
+        "make":"Hyundai",   
+        "name":" Elantra",   
+        "year":"2021",   
+        "price":"48,918",   
+        "mileage":"18,728",   
+        "body":"SUV",   
+        "engine":"2.0L 4cyl",   
+        "exterior":"Grey",   
+        "condition":"Good",   
+        "transmission":"Automatic",   
+        "drivetrain":"All Wheel Drive",   
+        "stock":"21407",   
+        "city":"Ottawa 9982-0105896763",  
+        "trade":"HYBRID ACCIDENT FREE EASY FINANCE TRADES",  
+        "image1":"https://images.edealer.ca/18/99560251.jpeg",
+        "image2":"https://images.edealer.ca/18/99560252.jpeg",
+        "image3":"https://images.edealer.ca/18/99560253.jpeg",
+        "image4":"https://images.edealer.ca/18/99560251.jpeg",
+        "detail":"Our 2018 Audi A5 Sportback 2.0T Komfort quattro Sportback will catch your eye in stunning Brilliant Black. Motivated by a TurboCharged 2.0 Litre 4 Cylinder producing 252hp paired with a 7 Speed Automatic transmission for brisk acceleration. This All Wheel Drive machine offer....."   
+        
+    }
+]
+}

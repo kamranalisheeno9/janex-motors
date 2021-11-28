@@ -1,0 +1,128 @@
+.header-div{
+    background-color: black;
+}
+.page-name-container{
+    background-color: #F7F7F7;
+border-bottom: 2px solid rgb(218, 218, 218);
+}
+.nav-page-links ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+
+
+}
+.nav-page-links ul li{
+    list-style: none;
+    padding: 5px;
+    color: rgb(131, 131, 131);
+
+}
+.nav-page-links ul li a{
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+
+}
+.page-name-header{
+    padding:  18px 25px;
+    align-items: center;
+    margin: 0px !important;
+}
+.page-name-header h2{
+    font-weight: 400 !important;
+    
+}
+.text-content-container{
+    padding: 40px 60px;
+}
+.text-content-container p{
+    font-size: 19px;
+}
+.contact-us-container{
+    background-color: #F2F2F2;
+    padding: 0px;
+
+}
+.contact-us-btn{
+    background-color: #3E669A;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.contact-us-btn a{
+    color: white;
+    text-decoration: none;
+}
+.contact-number-container{
+    padding: 40px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+
+}
+.contact-number-container:last-child{
+    border: none;
+}
+.contact-us-address{
+    text-decoration: none;
+    color: #6F6666;
+    font-weight: 600;
+}
+.contact-us-address:hover{
+    color: #6F6666;
+
+}
+.sales-toll{
+    padding: 0px !important;
+    margin: 0px !important;
+    color: gray;
+}
+.contact-sales{
+    color: black;
+    background-color: transparent;
+}
+.contact-number-container .nav-link.active {
+    color: #255b96;
+    background-color: transparent;
+    border:none;
+    font-weight: 700;
+    
+}
+.contact-number-container .nav-link {
+    color: #000000;
+    background-color: transparent;
+    border:none;
+    
+}
+.contact-sales ul{
+    padding: 0px;
+}
+.contact-sales li{
+    list-style: none;
+}
+.contact-sales ul li span{
+    float: right;
+
+}
+@media screen and (max-width:1020px){
+    .contact-number-container{
+        display: none;
+    }
+    .contact-us-container{
+        background-color: white;
+        padding-bottom: 40px;
+    }
+    .nav-page-links ul{
+        float: left;
+        padding: 0px !important;
+    }
+}
+@media screen and (max-width:580px){
+    .text-content-container {
+        padding: 40px 30px;
+    }
+    .nav-page-links ul li {
+        font-size: 14px;
+    }
+}

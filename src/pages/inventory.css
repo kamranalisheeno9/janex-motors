@@ -1,0 +1,185 @@
+.qualify-line-inventory{
+    padding: 20px;
+    background-color: #FAFAFB;
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.inventory-carousel-view{
+    width: 100%;
+    background-color: #535353;
+    color: rgb(209, 209, 209);
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
+.car-link{
+    text-decoration: none;
+}
+.car-container{
+    border: 1px solid rgb(223, 223, 223);
+    border-bottom: 4px solid rgb(247, 246, 246);
+    border-top: 4px solid rgb(247, 246, 246);
+    padding: 10px;
+}
+.main-car-card-name{
+    padding: 30px;
+}
+.car-trade-text{
+    color: rgb(94, 94, 94);
+    font-weight: 100;
+}
+.car-price-text{
+    font-size: 20px;
+    margin: 0px;
+}
+.car-price-text span{
+    color: #3AB665;
+    font-size: 28px;
+    font-weight: 600;
+}
+.car-mileage-text{
+    font-size: 20px;
+}
+.car-view-details,.car-financing {
+    text-decoration: none;
+}
+.car-view-details div{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #FF6900 ;
+}
+.car-financing div{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #70B808 ;
+}
+.car-view-details-img img{
+    width: 70%;
+    float: right;
+}
+.car-ul-details{
+    list-style: none;
+    padding: 0px;
+
+}
+.car-ul-details li{
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(133, 133, 133);
+
+}
+.car-ul-details li span{
+    float: right;
+    color: black;
+    font-weight: 500;
+}
+.even{
+    background-color: #F2F2F2;
+}
+.odd{
+    background-color: #FBFBFB;
+}
+.janex-number{
+    background-color: #EDEDED;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.car-lower-text{
+    font-size: 12px;
+    color: gray;
+    max-height:60px ;
+    overflow: hidden;
+}
+.janex-number p{
+    padding: 10px;
+    font-size: 18px;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+.middle-line{
+    color: gray;
+}
+
+.search-dropdown{
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 150px;
+    max-width: 100%;
+    border-left: 1px solid rgb(148, 148, 148);
+    border-right: 1px solid rgb(148, 148, 148);
+}
+.search-dropdown:focus{
+    box-shadow: none !important;
+    background-color: #454545;
+    color: white;
+}
+.search-dropdown-container .dropdown-menu.show {
+    background-color: #454545 !important;
+    color: white !important;
+    border-radius: 0px;
+    width: 100%;
+}
+.search-dropdown-container .dropdown-item{
+    color: white;
+    border-bottom: 1px dotted white;
+
+}
+.search-dropdown-container .dropdown-item:hover{
+    background-color: #222222 ;
+}
+.dropdown-searches{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-bar {
+    margin-top: 5px;
+}
+.search-bar input:focus{
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid white;
+    
+    
+}
+
+.search-dropdown-container{
+    background-color: #BCBCBC;
+
+}
+.search-icon{
+    background-color: white;
+    border: none    ;
+}
+.search-bar button:active{
+    background-color: rgb(133, 133, 133);
+}
+#button-addon1{
+    box-shadow: none !important;
+
+}
+
+
+@media screen and (max-width:776px){
+    .search-dropdown{
+        width: 500px;
+    }
+    .middle-line{
+        display: none;
+    }
+}
+@media screen and (max-width:560px){
+    .search-dropdown{
+        width: 400px;
+    }
+}
+@media screen and (max-width:480px){
+    .search-dropdown{
+        width: 300px;
+    }
+}

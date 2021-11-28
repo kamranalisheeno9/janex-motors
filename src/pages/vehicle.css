@@ -1,0 +1,176 @@
+.vehicle-call span{
+    color: #f78c0a;
+    
+}
+.vehicle-price span{
+    color: #2E9015;
+    font-weight: 700;
+    font-size: 26px;
+}
+.vehicle-price-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.vehicle-all-container{
+    border: 1px solid rgb(219, 219, 219);
+
+}
+.vehicle-price-container .row{
+    align-items: center;
+
+}
+.views-container{
+    margin-top: 20px;
+    display: flex;
+    background-color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+.views-container p{
+    margin: 0px;
+}
+.views-text{
+    margin-left: 10px;
+
+}
+.views-days{
+    font-size: 12px;
+    color: rgb(216, 216, 216);
+    
+}
+.views-container img{
+    height: 100%;
+}
+.vehicle-janex-number{
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #EDEDED;
+}
+.vehicle-mileage{
+    background-color: #EDEDED;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.vehicle-finance {
+    margin-top: 20px !important;
+    padding:10px !important;
+}
+.vehicle-details{
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.vehicle-small-img{
+    background-color: #EDEDED;
+    text-align: center;
+    padding: 20px;
+
+}
+.equifax{
+    float: right;
+}
+.vehicle-credit{
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+.vehicle-sell-car{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vehicle-main-img img{
+    width: 100%;
+}
+.vehicle-location-container{
+    border: 1px solid #e5e5e5;
+    min-height: 288px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px gray;
+}
+.vehicle-location{
+    background-color: #EDEDED;
+    padding: 20px;
+
+}
+.vehicle-location span{
+    float: right;
+}
+.vehicle-location span a{
+    color: rgb(243, 42, 28);
+    font-weight: 400;
+    text-decoration: none;
+}
+.location-text-vehicle{
+    padding: 10px 15px;
+}
+.location-text-vehicle p{
+    font-size: 14px;
+}
+.location-number{
+    background-color: #EDEDED;
+    text-align: center;
+    padding: 20px;
+}
+.vehicle-data-accordion .accordion-item:last-of-type .accordion-button.collapsed {
+    background-image: url('https://static.edealer.ca/V3_1/V-3/dist/img/tabs.png');
+    color: white;
+    box-shadow: none;
+}
+.vehicle-data-accordion .accordion-button:not(.collapsed) {
+    background-image: url('https://static.edealer.ca/V3_1/V-3/dist/img/tabs.png');
+    box-shadow: none;
+    color: white;
+}
+.vehicle-data-accordion .accordion-button::after {
+
+   background-image: url('https://icon-library.com/images/white-down-arrow-icon/white-down-arrow-icon-7.jpg');
+}
+.vehicle-details-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vehicle-details-header{
+    border-bottom: 1px solid rgb(209, 209, 209);
+    padding-bottom: 4px;
+    margin: 0px;
+
+}
+.vehicle-details-header span{
+float: right;
+font-weight: 100;
+}
+
+.vehicle-details-item{
+    font-size: 14px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin: 0px;
+    padding: 4px 20px 4px 0px;
+
+}
+.vehicle-details-item:hover{
+    background-color: #EDEDED;
+
+}
+.vehicle-details-item span{
+    float: right;
+    color: #0B9EEB;
+}
+.vehicle-details-row{
+    border-left: 1px solid rgb(228, 228, 228);
+    border-right: 1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
