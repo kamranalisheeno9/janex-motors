@@ -19,7 +19,6 @@ import {
 const Inventory = (props) => {
 
     const [data, setData] = useState(CarData.cars)
-    const [filter, setFilter] = useState("data")
     const [search, setSearch] = useState('');
 
 
@@ -27,21 +26,18 @@ const Inventory = (props) => {
     const [makedata, setMakeData] = useState(["Acura", "Audi", "BMW", "Buick", "Cadillac", "Dodge", "Ford", "Ferrari", "Honda", "Hyundai", "Jaguar", "Range Rover"])
     const [modeldata, setModelData] = useState(["4Runner", "A4", "A5", "Accent", "Accord", "C-Class", "C-HR", "CR-V", "CX-7"])
     const [bodydata, setBodyData] = useState(["Coupe", "Hatchback", "Other", "Pickup", "SUV", "Sedan", "Vans"])
-    const [pricedata, setPriceData] = useState(["0", "10000", "20000", "30000", "50000", "50000", "60000", "70000",])
+    const [transmissionData, setTransmissionData] = useState(["Automatic", "Manual", "Other"])
+  
     const filterData = data.filter(car => {
-        return car.year.toLowerCase().includes(search.toLowerCase())
-    })
-
-    const filterDataMake = data.filter(car => {
         return car.make.toLowerCase().includes(search.toLowerCase())
     })
-    const YearFilter = (e, year) => {
+
+    const YearFilter = (year) => {
         setSearch(year)
 
     }
     const MakeFilter = (make) => {
         setSearch(make)
-
 
     }
     const ModelFilter = (model) => {
@@ -49,12 +45,10 @@ const Inventory = (props) => {
 
     }
     const BodyFilter = (body) => {
-        setSearch(body)
-
+setSearch(body)
     }
-    const PriceFilter = (price) => {
-        setSearch(price)
-
+    const TransmissionFilter = (transmission) => {
+            setSearch(transmission)
     }
 
 
@@ -117,7 +111,7 @@ const Inventory = (props) => {
                                             {year.map((year, index) => {
                                                 return (
 
-                                                    <Dropdown.Item key={index} onClick={(e) => YearFilter(e, year)} >{year}</Dropdown.Item>
+                                                    <Dropdown.Item key={index} onClick={(e) => YearFilter(year)} >{year}</Dropdown.Item>
                                                 )
                                             })}
                                         </Dropdown.Menu>
@@ -166,14 +160,14 @@ const Inventory = (props) => {
                                     </Dropdown>
                                     <Dropdown className="search-dropdown-container">
                                         <Dropdown.Toggle variant="" className="search-dropdown" id="dropdown-button-drop-down">
-                                            Price
+                                            Transmission
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
-                                            {pricedata.map((price, index) => {
+                                            {transmissionData.map((transmission, index) => {
                                                 return (
 
-                                                    <Dropdown.Item key={index} onClick={(e) => PriceFilter(price)} >{price}</Dropdown.Item>
+                                                    <Dropdown.Item key={index} onClick={(e) => TransmissionFilter(transmission)} >{transmission}</Dropdown.Item>
                                                 )
                                             })}
                                         </Dropdown.Menu>
@@ -185,6 +179,8 @@ const Inventory = (props) => {
                                             aria-label="Example text with button addon"
                                             aria-describedby="basic-addon1"
                                             placeholder="Search Inventory"
+                                            value={search}
+                                            onChange={(e)=>setSearch(e.target.value)}
                                         />
                                         <Button variant="" className="search-icon" id="button-addon1">
                                             <BiSearch />
@@ -195,7 +191,35 @@ const Inventory = (props) => {
                             </Row>
                         </Container>
 
-                        {data.map((car, index) => {
+                        {data.filter((val)=>{
+                            if(search==""){
+                                return val
+                            }
+                            else if (val.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                            else if (val.body.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                            else if (val.make.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                            else if (val.year.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                            else if (val.transmission.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                            else if (val.price.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
+                                return val
+
+                            }
+                        }).map((car, index) => {
                             return (
                                 <Container key={index} className="car-container">
                                     <Row className="justify-content-between">
@@ -242,7 +266,7 @@ const Inventory = (props) => {
                                             </Link>
                                         </Col>
                                         <Col md={7} className="main-car-card-name">
-                                            <h5 >{car.year} {car.company} {car.name} {car.transmission}</h5>
+                                            <h5 >{car.year} {car.make} {car.name} {car.transmission}</h5>
                                             <p className="car-trade-text">{car.trade}</p>
                                             <p className="car-price-text">Price : <span> $ {car.price} </span></p>
                                             <p className="car-mileage-text">Mileage : {car.mileage} km</p>

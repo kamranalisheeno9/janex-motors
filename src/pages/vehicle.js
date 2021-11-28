@@ -129,8 +129,8 @@ const Vehicle = (props) => {
                     <Container className="vehicle-price-container">
                         <Row>
                             <Col md={8}>
-                                <h5 >dasdasdsdsd dasddas dasd{props.data.year} {props.data.company} {props.data.name} {props.data.transmission}</h5>
-                                <p className="car-trade-text">{props.data.trade}dasdasd dsad dsadas dasd das</p>
+                                <h5 >{props.data.year} {props.data.company} {props.data.name} {props.data.transmission}</h5>
+                                <p className="car-trade-text">{props.data.trade}</p>
                                 <p className="vehicle-call">Call us: <span>613-260-0373</span></p>
                             </Col>
                             <Col md={4}>
@@ -188,31 +188,33 @@ const Vehicle = (props) => {
                                         <img
                                         className="d-block w-100"
                                         onClick={()=>setActiveImg(0)}
-                                        src="https://images.edealer.ca/18/100554610.jpeg" />
+                                        src={props.data.image1} />
                                     </Col>
                                     <Col xs={3} >
                                         
                                         <img
                                         className="d-block w-100"
                                         onClick={()=>setActiveImg(1)}
-                                        src="https://images.edealer.ca/18/100554610.jpeg" />
+                                        src={props.data.image2} />
+
                                     </Col>
                                     <Col xs={3}>
                                         <img
                                         onClick={()=>setActiveImg(2)}
                                         className="d-block w-100"
+                                        src={props.data.image3} />
                                         
-                                        src="https://images.edealer.ca/18/100554610.jpeg" />
                                     </Col>
                                     <Col xs={3}>
                                         <img
                                         className="d-block w-100"
                                         onClick={()=>setActiveImg(3)}
-                                        src="https://images.edealer.ca/18/100554610.jpeg" />
+                                        src={props.data.image4} />
+
                                     </Col>
                                 </Row>
                                 <div className="inventory-carousel-view" >
-                                    Stock #:
+                                    Stock #: {props.data.stock}
                                 </div>
                             </Col>
                             <Col md={5}>
@@ -253,7 +255,7 @@ const Vehicle = (props) => {
                                 </Row>
                                 <div>
                                     <h6>Description</h6>
-                                    <p className="car-lower-text">{props.data.detail} sdasdasdasdasdasdasdasdsadasds dasdadsadadasdasdasdad dasdasdasdasdasdd</p>
+                                    <p className="car-lower-text">{props.data.detail}</p>
 
                                 </div>
                                 <div className="vehicle-small-img">

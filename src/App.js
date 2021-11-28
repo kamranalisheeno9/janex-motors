@@ -9,6 +9,7 @@ import SellTrade from './pages/selltrade'
 import Vehicle from './pages/vehicle'
 import Inventory from './pages/inventory'
 import FinanceDepartment from './pages/financedept'
+import ScrollToTop from './components/scrolltotop'
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,12 +17,14 @@ import {
   Link
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
+import { useLocation } from "react-router-dom";
 function App() {
   const [currentCarData,setCurrentCarData]=useState({})
 
   
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
           
           <Route path="/vehicle">

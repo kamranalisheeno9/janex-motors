@@ -119,7 +119,7 @@ const CarCard = (props) => {
                         <h5>${data.price} <br /> <span>+Sales Taxes</span></h5>
                     </div>
                     </div>
-                    <button className="card-car-btn">View Featured Special</button>
+                    <Link to="/inventory"><button className="card-car-btn">View Featured Special</button></Link>
             </div>
 
             )
